@@ -1,0 +1,35 @@
+*{
+    box-sizing: content-box;
+}
+
+.calculator-container {
+    display: flex;
+    flex-flow: nowrap column;
+    border: 3px solid black;
+    margin: auto;
+    height: 502px;
+    width: 388px;
+    gap: 15px;
+    padding: 12px;
+
+    border-radius: 15px;
+    background-color: lightskyblue;
+}
+
+.display-section {
+    display: flex;
+    flex-grow: 5;
+
+}
+
+.undo-section {
+    flex-grow: 3;
+}
+
+.input-section {
+    flex-grow: 12;
+}
+
+.display-section, .undo-section, .input-section {
+    border: 5px solid red;
+}
