@@ -10,16 +10,44 @@
     height: 502px;
     width: 388px;
     gap: 15px;
-    padding: 12px;
-
+    padding: 15px;
     border-radius: 15px;
-    background-color: lightskyblue;
+    background-color: rgb(255, 255, 199)
 }
 
 .display-section {
     display: flex;
+    flex-flow: nowrap column;
     flex-grow: 5;
+    flex-basis: 0;
+    min-height: 120px;
+    border: 3px solid rgb(64, 64, 64);
+    background-color: black;
+    border-radius: 10px;
+    font-family: 'VT323', 'Courier New', monospace;
+    color: lime;
+}
 
+.previous-display {
+    margin-top: 14px;
+    flex-grow: 2;
+    font-size: 22px;
+    font-weight:bold;
+}
+
+.current-display {
+    margin-bottom: 12px;
+    flex-grow: 3;
+    font-size: 38px;
+    
+}
+
+.previous-display,
+.current-display {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0px 20px;
 }
 
 .undo-section {
@@ -30,6 +58,6 @@
     flex-grow: 12;
 }
 
-.display-section, .undo-section, .input-section {
+.undo-section, .input-section {
     border: 5px solid red;
 }
