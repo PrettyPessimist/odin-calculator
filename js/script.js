@@ -116,7 +116,6 @@ computeBtns.forEach((computeBtn) => {
 });
 
 
-
 function updateDisplay() {
     currentDisplay.textContent = `${n1 ?? ""} ${opSymbol ?? ""} ${n2 ?? ""}`;
 }
@@ -140,7 +139,7 @@ function operate(n1, opSymbol, n2) {
             result = quotient(n1, n2);
             break;
     }
-    
+
     if (result % 1 !== 0) {
         result = result.toFixed(2); 
     }
