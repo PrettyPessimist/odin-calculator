@@ -11,16 +11,16 @@
     <div class="calculator-container">
         <div class="display-section">
             <div class="previous-display">
-                <label>1,200</label>
+                <label class="prev-result"></label>
             </div>
             <div class="current-display">
-                <label>120 + 456</label>
+                <label class="current-operation"></label>
             </div>
         </div>
 
         <div class="undo-section">
-            <button class="reset-btn compute"> RESET </button>
-            <button class="undo-btn compute"> DELETE </button>
+            <button class="reset-btn compute" id="clear"> RESET </button>
+            <button class="undo-btn compute" id="delete"> DELETE </button>
         </div>
 
         <div class="input-section">
@@ -45,7 +45,7 @@
             <div class="row4">
                 <button class="operator" id=".">.</button>
                 <button class="num" id="0">0</button>
-                <button class="equals">=</button>
+                <button class="equal-btn compute" id="equal">=</button>
                 <button class="operator" id="/">÷</button>
             </div>
         </div>
